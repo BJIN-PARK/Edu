@@ -15,5 +15,5 @@ public:
 	~addData();
 
 private:
-	Ui::addData *ui;
+	Ui::addDataClass *ui;
 };

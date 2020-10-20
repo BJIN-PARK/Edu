@@ -22,5 +22,5 @@ public slots:
 private:
     addData* m_addData;
     deleteData* m_deleteData;
-    Ui::IntTypeStack *ui;
+    Ui::IntTypeStackClass *ui;
 };

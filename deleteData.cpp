@@ -3,7 +3,7 @@
 
 deleteData::deleteData(QWidget* parent) :
 	QMainWindow(parent),
-	ui(new Ui::deleteData)
+	ui(new Ui::deleteDataClass)
 {
 	ui->setupUi(this);
 }

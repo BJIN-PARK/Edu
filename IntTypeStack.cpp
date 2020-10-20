@@ -3,7 +3,7 @@
 
 IntTypeStack::IntTypeStack(QWidget *parent)
     : QMainWindow(parent),
-    ui(new Ui::IntTypeStack)
+    ui(new Ui::IntTypeStackClass)
 {
     ui->setupUi(this);
 

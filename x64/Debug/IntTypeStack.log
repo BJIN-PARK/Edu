@@ -1,0 +1,62 @@
+﻿  moc addData.h
+  addData.cpp
+  deleteData.cpp
+  IntTypeStack.cpp
+  main.cpp
+D:\Edu\Assignment\IntTypeStack\addData.h(18,6): error C2039: 'addDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,22): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,6): error C2039: 'deleteDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,25): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,9): error C2039: 'IntTypeStackClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(6): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,27): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,27): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,30): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 main.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,6): error C2039: 'addDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,22): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,6): error C2039: 'addDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.h(18,22): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,6): error C2039: 'deleteDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,25): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,9): error C2039: 'IntTypeStackClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(6): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,27): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,27): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.h(25,30): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 IntTypeStack.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,6): error C2039: 'deleteDataClass': 'Ui'의 멤버가 아닙니다. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(4): message : 'Ui' 선언을 참조하십시오. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C2143: 구문 오류: ';'이(가) '*' 앞에 없습니다. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,21): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.h(18,25): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(6,5): error C2614: 'IntTypeStack': 멤버 초기화가 잘못되었습니다. 'ui'이(가) 기본 또는 멤버가 아닙니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(8,5): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(10,10): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(12,10): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(14,10): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(20,9): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\IntTypeStack.cpp(20,11): error C2541: 'delete': 포인터가 아닌 개체를 삭제할 수 없습니다.
+D:\Edu\Assignment\IntTypeStack\x64\Debug\uic\ui_addData.h(71,48): error C2504: 'Ui_addDataClass': 기본 클래스를 정의하지 않았습니다. (소스 파일 컴파일 중 addData.cpp)
+D:\Edu\Assignment\IntTypeStack\addData.cpp(6,2): error C2614: 'addData': 멤버 초기화가 잘못되었습니다. 'ui'이(가) 기본 또는 멤버가 아닙니다.
+D:\Edu\Assignment\IntTypeStack\addData.cpp(8,2): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\addData.cpp(12,9): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\addData.cpp(12,11): error C2541: 'delete': 포인터가 아닌 개체를 삭제할 수 없습니다.
+D:\Edu\Assignment\IntTypeStack\x64\Debug\uic\ui_deleteData.h(71,54): error C2504: 'Ui_deleteDataClass': 기본 클래스를 정의하지 않았습니다. (소스 파일 컴파일 중 deleteData.cpp)
+D:\Edu\Assignment\IntTypeStack\deleteData.cpp(6,2): error C2614: 'deleteData': 멤버 초기화가 잘못되었습니다. 'ui'이(가) 기본 또는 멤버가 아닙니다.
+D:\Edu\Assignment\IntTypeStack\deleteData.cpp(8,2): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\deleteData.cpp(12,9): error C2065: 'ui': 선언되지 않은 식별자입니다.
+D:\Edu\Assignment\IntTypeStack\deleteData.cpp(12,11): error C2541: 'delete': 포인터가 아닌 개체를 삭제할 수 없습니다.

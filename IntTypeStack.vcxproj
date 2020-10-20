@@ -101,6 +101,11 @@
   <ItemGroup>
     <QtMoc Include="deleteData.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\uic\ui_addData.h" />
+    <ClInclude Include="x64\Debug\uic\ui_deleteData.h" />
+    <ClInclude Include="x64\Debug\uic\ui_IntTypeStack.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />
