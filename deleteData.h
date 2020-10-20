@@ -15,5 +15,5 @@ public:
 	~deleteData();
 
 private:
-	Ui::deleteDataClass* ui;
+	Ui::deleteData* ui;
 };

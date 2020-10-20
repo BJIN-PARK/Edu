@@ -5,7 +5,7 @@
 
 namespace Ui
 {
-    class IntTypeStack;
+    class IntTypeStackClass;
 }
 
 class IntTypeStack : public QMainWindow

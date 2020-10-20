@@ -68,7 +68,7 @@ public:
 };
 
 namespace Ui {
-    class addDataClass: public Ui_addDataClass {};
+    class addData: public Ui_addData {};
 } // namespace Ui
 
 QT_END_NAMESPACE

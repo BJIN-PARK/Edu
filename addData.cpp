@@ -3,7 +3,7 @@
 
 addData::addData(QWidget* parent) :
 	QMainWindow(parent),
-	ui(new Ui::addDataClass)
+	ui(new Ui::addData)
 {
 	ui->setupUi(this);
 }

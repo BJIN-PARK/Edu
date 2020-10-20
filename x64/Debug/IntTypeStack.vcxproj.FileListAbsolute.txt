@@ -1,0 +1,2 @@
+D:\Edu\Assignment\IntTypeStack\x64\Debug\IntTypeStack.exe
+D:\Edu\Assignment\IntTypeStack\x64\Debug\IntTypeStack.pdb

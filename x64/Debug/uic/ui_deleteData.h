@@ -68,7 +68,7 @@ public:
 };
 
 namespace Ui {
-    class deleteDataClass: public Ui_deleteDataClass {};
+    class deleteData: public Ui_deleteData {};
 } // namespace Ui
 
 QT_END_NAMESPACE
