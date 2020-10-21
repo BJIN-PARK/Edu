@@ -1,8 +1,9 @@
-﻿  moc IntTypeStack.h
+﻿  moc dataIO.h
   IntTypeStack.cpp
+  dataIO.cpp
   main.cpp
-  qrc_IntTypeStack.cpp
-  moc_addData.cpp
-  moc_deleteData.cpp
+D:\Edu\Assignment\IntTypeStack\dataIO.cpp(34,6): warning C4311: '<function-style-cast>': 'QListWidgetItem *'에서 'int'(으)로 포인터가 잘립니다.
+D:\Edu\Assignment\IntTypeStack\dataIO.cpp(57,6): warning C4311: '<function-style-cast>': 'QListWidgetItem *'에서 'int'(으)로 포인터가 잘립니다.
   moc_IntTypeStack.cpp
+  moc_dataIO.cpp
   IntTypeStack.vcxproj -> D:\Edu\Assignment\IntTypeStack\x64\Debug\IntTypeStack.exe

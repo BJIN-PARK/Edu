@@ -1,7 +1,12 @@
 #pragma once
 #include <QtWidgets/QMainWindow>
-#include "addData.h"
-#include "deleteData.h"
+#include <QDebug>
+#include <QLineEdit>
+#include <QPushButton>
+#include "DataIO.h"
+// #include "sortData.h"
+// #include "allInformation.h"
+// #include "totalDataSize.h"
 
 namespace Ui
 {
@@ -16,11 +21,8 @@ public:
     IntTypeStack(QWidget *parent = Q_NULLPTR);
     ~IntTypeStack();
 public slots:
-    void onAddData();
-    void onDeleteData();
-
+    void onDataIO();
 private:
-    addData* m_addData;
-    deleteData* m_deleteData;
+    DataIO* m_DataIO{ nullptr };
     Ui::IntTypeStackClass *ui;
 };

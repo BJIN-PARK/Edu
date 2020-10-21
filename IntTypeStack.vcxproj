@@ -85,25 +85,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="addData.cpp" />
-    <ClCompile Include="deleteData.cpp" />
+    <ClCompile Include="dataIO.cpp" />
     <QtRcc Include="IntTypeStack.qrc" />
-    <QtUic Include="addData.ui" />
-    <QtUic Include="deleteData.ui" />
+    <QtUic Include="dataIO.ui" />
     <QtUic Include="IntTypeStack.ui" />
     <QtMoc Include="IntTypeStack.h" />
     <ClCompile Include="IntTypeStack.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="addData.h" />
+    <QtMoc Include="dataIO.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="deleteData.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="x64\Debug\uic\ui_addData.h" />
-    <ClInclude Include="x64\Debug\uic\ui_deleteData.h" />
+    <ClInclude Include="x64\Debug\uic\ui_dataIO.h" />
     <ClInclude Include="x64\Debug\uic\ui_IntTypeStack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

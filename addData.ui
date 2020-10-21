@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>205</width>
-    <height>135</height>
+    <width>527</width>
+    <height>422</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,22 +16,22 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>120</x>
      <y>10</y>
      <width>100</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;데이터 생성&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Data List&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>40</y>
-     <width>35</width>
+     <y>240</y>
+     <width>51</width>
      <height>28</height>
     </rect>
    </property>
@@ -42,33 +42,56 @@
     </font>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;입력&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;NUMBER&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_createData">
    <property name="geometry">
     <rect>
-     <x>65</x>
-     <y>80</y>
+     <x>170</x>
+     <y>240</y>
      <width>60</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
-    <string>확인</string>
+    <string>ADD</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="line_createData">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>100</width>
+     <x>69</x>
+     <y>240</y>
+     <width>91</width>
      <height>28</height>
     </rect>
    </property>
    <property name="dragEnabled">
     <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>281</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_createData_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>240</y>
+     <width>60</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DELETE</string>
    </property>
   </widget>
  </widget>

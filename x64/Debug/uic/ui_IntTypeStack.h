@@ -28,9 +28,8 @@ class Ui_IntTypeStackClass
 {
 public:
     QWidget *centralWidget;
-    QPushButton *pushButton_deleteData;
     QPushButton *pushButton_allInformation;
-    QPushButton *pushButton_addData;
+    QPushButton *pushButton_dataIO;
     QPushButton *pushButton_sortData;
     QLabel *label;
     QPushButton *pushButton_totalDataSize;
@@ -46,27 +45,24 @@ public:
         IntTypeStackClass->resize(600, 400);
         centralWidget = new QWidget(IntTypeStackClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        pushButton_deleteData = new QPushButton(centralWidget);
-        pushButton_deleteData->setObjectName(QStringLiteral("pushButton_deleteData"));
-        pushButton_deleteData->setGeometry(QRect(10, 70, 100, 28));
         pushButton_allInformation = new QPushButton(centralWidget);
         pushButton_allInformation->setObjectName(QStringLiteral("pushButton_allInformation"));
-        pushButton_allInformation->setGeometry(QRect(10, 130, 100, 28));
-        pushButton_addData = new QPushButton(centralWidget);
-        pushButton_addData->setObjectName(QStringLiteral("pushButton_addData"));
-        pushButton_addData->setGeometry(QRect(10, 40, 100, 28));
+        pushButton_allInformation->setGeometry(QRect(10, 100, 100, 28));
+        pushButton_dataIO = new QPushButton(centralWidget);
+        pushButton_dataIO->setObjectName(QStringLiteral("pushButton_dataIO"));
+        pushButton_dataIO->setGeometry(QRect(10, 40, 100, 28));
         pushButton_sortData = new QPushButton(centralWidget);
         pushButton_sortData->setObjectName(QStringLiteral("pushButton_sortData"));
-        pushButton_sortData->setGeometry(QRect(10, 100, 100, 28));
+        pushButton_sortData->setGeometry(QRect(10, 70, 100, 28));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(10, 10, 100, 28));
         pushButton_totalDataSize = new QPushButton(centralWidget);
         pushButton_totalDataSize->setObjectName(QStringLiteral("pushButton_totalDataSize"));
-        pushButton_totalDataSize->setGeometry(QRect(10, 160, 100, 28));
+        pushButton_totalDataSize->setGeometry(QRect(10, 130, 100, 28));
         pushButton_exit = new QPushButton(centralWidget);
         pushButton_exit->setObjectName(QStringLiteral("pushButton_exit"));
-        pushButton_exit->setGeometry(QRect(10, 190, 100, 28));
+        pushButton_exit->setGeometry(QRect(10, 160, 100, 28));
         IntTypeStackClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(IntTypeStackClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -87,9 +83,8 @@ public:
     void retranslateUi(QMainWindow *IntTypeStackClass)
     {
         IntTypeStackClass->setWindowTitle(QApplication::translate("IntTypeStackClass", "IntTypeStack", nullptr));
-        pushButton_deleteData->setText(QApplication::translate("IntTypeStackClass", "Delete Data", nullptr));
         pushButton_allInformation->setText(QApplication::translate("IntTypeStackClass", "All Information", nullptr));
-        pushButton_addData->setText(QApplication::translate("IntTypeStackClass", "Add Data", nullptr));
+        pushButton_dataIO->setText(QApplication::translate("IntTypeStackClass", "Data IO", nullptr));
         pushButton_sortData->setText(QApplication::translate("IntTypeStackClass", "Sort Data", nullptr));
         label->setText(QApplication::translate("IntTypeStackClass", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Menu</span></p></body></html>", nullptr));
         pushButton_totalDataSize->setText(QApplication::translate("IntTypeStackClass", "Total Data Size", nullptr));
