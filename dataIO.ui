@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>addData</class>
- <widget class="QWidget" name="addData">
+ <class>DataIO</class>
+ <widget class="QWidget" name="DataIO">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>268</height>
+    <width>396</width>
+    <height>286</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton_deleteData">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>230</y>
+     <x>240</x>
+     <y>240</y>
      <width>60</width>
      <height>28</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>230</y>
+     <x>20</x>
+     <y>240</y>
      <width>51</width>
      <height>28</height>
     </rect>
@@ -48,8 +48,8 @@
   <widget class="QPushButton" name="pushButton_createData">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>230</y>
+     <x>170</x>
+     <y>240</y>
      <width>60</width>
      <height>28</height>
     </rect>
@@ -61,8 +61,8 @@
   <widget class="QLineEdit" name="line_dataIO">
    <property name="geometry">
     <rect>
-     <x>59</x>
-     <y>230</y>
+     <x>69</x>
+     <y>240</y>
      <width>91</width>
      <height>28</height>
     </rect>
@@ -74,8 +74,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>0</y>
+     <x>160</x>
+     <y>10</y>
      <width>100</width>
      <height>28</height>
     </rect>
@@ -87,11 +87,24 @@
   <widget class="QListWidget" name="listWidget_current">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>30</y>
-     <width>281</width>
+     <x>20</x>
+     <y>40</y>
+     <width>360</width>
      <height>192</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_sortData">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>240</y>
+     <width>60</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SORT</string>
    </property>
   </widget>
  </widget>

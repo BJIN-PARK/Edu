@@ -3,14 +3,13 @@
 #include <QDebug>
 #include <QLineEdit>
 #include <QPushButton>
-#include "DataIO.h"
-// #include "sortData.h"
-// #include "allInformation.h"
+#include "dataIO.h"
+#include "allInfo.h"
 // #include "totalDataSize.h"
 
 namespace Ui
 {
-    class IntTypeStackClass;
+    class IntTypeStack;
 }
 
 class IntTypeStack : public QMainWindow
@@ -18,11 +17,19 @@ class IntTypeStack : public QMainWindow
     Q_OBJECT
 
 public:
-    IntTypeStack(QWidget *parent = Q_NULLPTR);
+    IntTypeStack(QWidget* parent = Q_NULLPTR);
     ~IntTypeStack();
-public slots:
     void onDataIO();
+    void onAllInfo();
+    void syncData(QList<int> curData, QList<int> createData, QList<int> deleteData);
+
 private:
     DataIO* m_DataIO{ nullptr };
-    Ui::IntTypeStackClass *ui;
+    AllInfo* m_AllInfo{ nullptr };
+    Ui::IntTypeStack* ui;
+
+    // Data List
+	QList<int> m_listCurrentDataList;
+	QList<int> m_listCreateDataList;
+	QList<int> m_listDeleteDataList;
 };

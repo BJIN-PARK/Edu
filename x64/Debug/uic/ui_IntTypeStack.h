@@ -24,13 +24,12 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_IntTypeStackClass
+class Ui_IntTypeStack
 {
 public:
     QWidget *centralWidget;
-    QPushButton *pushButton_allInformation;
+    QPushButton *pushButton_allInfo;
     QPushButton *pushButton_dataIO;
-    QPushButton *pushButton_sortData;
     QLabel *label;
     QPushButton *pushButton_totalDataSize;
     QPushButton *pushButton_exit;
@@ -38,63 +37,59 @@ public:
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
-    void setupUi(QMainWindow *IntTypeStackClass)
+    void setupUi(QMainWindow *IntTypeStack)
     {
-        if (IntTypeStackClass->objectName().isEmpty())
-            IntTypeStackClass->setObjectName(QStringLiteral("IntTypeStackClass"));
-        IntTypeStackClass->resize(600, 400);
-        centralWidget = new QWidget(IntTypeStackClass);
+        if (IntTypeStack->objectName().isEmpty())
+            IntTypeStack->setObjectName(QStringLiteral("IntTypeStack"));
+        IntTypeStack->resize(600, 400);
+        centralWidget = new QWidget(IntTypeStack);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        pushButton_allInformation = new QPushButton(centralWidget);
-        pushButton_allInformation->setObjectName(QStringLiteral("pushButton_allInformation"));
-        pushButton_allInformation->setGeometry(QRect(10, 100, 100, 28));
+        pushButton_allInfo = new QPushButton(centralWidget);
+        pushButton_allInfo->setObjectName(QStringLiteral("pushButton_allInfo"));
+        pushButton_allInfo->setGeometry(QRect(10, 70, 100, 28));
         pushButton_dataIO = new QPushButton(centralWidget);
         pushButton_dataIO->setObjectName(QStringLiteral("pushButton_dataIO"));
         pushButton_dataIO->setGeometry(QRect(10, 40, 100, 28));
-        pushButton_sortData = new QPushButton(centralWidget);
-        pushButton_sortData->setObjectName(QStringLiteral("pushButton_sortData"));
-        pushButton_sortData->setGeometry(QRect(10, 70, 100, 28));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(10, 10, 100, 28));
         pushButton_totalDataSize = new QPushButton(centralWidget);
         pushButton_totalDataSize->setObjectName(QStringLiteral("pushButton_totalDataSize"));
-        pushButton_totalDataSize->setGeometry(QRect(10, 130, 100, 28));
+        pushButton_totalDataSize->setGeometry(QRect(10, 100, 100, 28));
         pushButton_exit = new QPushButton(centralWidget);
         pushButton_exit->setObjectName(QStringLiteral("pushButton_exit"));
-        pushButton_exit->setGeometry(QRect(10, 160, 100, 28));
-        IntTypeStackClass->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(IntTypeStackClass);
+        pushButton_exit->setGeometry(QRect(10, 130, 100, 28));
+        IntTypeStack->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(IntTypeStack);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 600, 26));
-        IntTypeStackClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(IntTypeStackClass);
+        IntTypeStack->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(IntTypeStack);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        IntTypeStackClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(IntTypeStackClass);
+        IntTypeStack->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(IntTypeStack);
         statusBar->setObjectName(QStringLiteral("statusBar"));
-        IntTypeStackClass->setStatusBar(statusBar);
+        IntTypeStack->setStatusBar(statusBar);
 
-        retranslateUi(IntTypeStackClass);
+        retranslateUi(IntTypeStack);
 
-        QMetaObject::connectSlotsByName(IntTypeStackClass);
+        QMetaObject::connectSlotsByName(IntTypeStack);
     } // setupUi
 
-    void retranslateUi(QMainWindow *IntTypeStackClass)
+    void retranslateUi(QMainWindow *IntTypeStack)
     {
-        IntTypeStackClass->setWindowTitle(QApplication::translate("IntTypeStackClass", "IntTypeStack", nullptr));
-        pushButton_allInformation->setText(QApplication::translate("IntTypeStackClass", "All Information", nullptr));
-        pushButton_dataIO->setText(QApplication::translate("IntTypeStackClass", "Data IO", nullptr));
-        pushButton_sortData->setText(QApplication::translate("IntTypeStackClass", "Sort Data", nullptr));
-        label->setText(QApplication::translate("IntTypeStackClass", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Menu</span></p></body></html>", nullptr));
-        pushButton_totalDataSize->setText(QApplication::translate("IntTypeStackClass", "Total Data Size", nullptr));
-        pushButton_exit->setText(QApplication::translate("IntTypeStackClass", "Exit", nullptr));
+        IntTypeStack->setWindowTitle(QApplication::translate("IntTypeStack", "IntTypeStack", nullptr));
+        pushButton_allInfo->setText(QApplication::translate("IntTypeStack", "All Information", nullptr));
+        pushButton_dataIO->setText(QApplication::translate("IntTypeStack", "Data IO", nullptr));
+        label->setText(QApplication::translate("IntTypeStack", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Menu</span></p></body></html>", nullptr));
+        pushButton_totalDataSize->setText(QApplication::translate("IntTypeStack", "Total Data Size", nullptr));
+        pushButton_exit->setText(QApplication::translate("IntTypeStack", "Exit", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class IntTypeStackClass: public Ui_IntTypeStackClass {};
+    class IntTypeStack: public Ui_IntTypeStack {};
 } // namespace Ui
 
 QT_END_NAMESPACE

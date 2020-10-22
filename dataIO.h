@@ -16,12 +16,19 @@ class DataIO : public QMainWindow
 public:
 	explicit DataIO(QWidget* parent = Q_NULLPTR);
 	~DataIO();
-public:
-	void DataIO::addDataClicked();
-	void DataIO::deleteDataClicked();
+	void addDataClicked();
+	void deleteDataClicked();
+	void sortDataClicked();
+
+signals:
+	void sigCloseEvent(QList<int> curData, QList<int> createData, QList<int> deleteData);
+
+protected:
+	void closeEvent(QCloseEvent* evt) override;
+
 private:
 	int cnt = 0;
-	Ui::DataIO *ui;
+	Ui::DataIO* ui;
 	QList<int> currentDataList;
 	QList<int> createDataList;
 	QList<int> deleteDataList;

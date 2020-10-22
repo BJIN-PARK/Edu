@@ -44,23 +44,35 @@
     <ClCompile Include="dataIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="allInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="dataIO.ui">
       <Filter>Resource Files</Filter>
     </QtUic>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="x64\Debug\uic\ui_IntTypeStack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="x64\Debug\uic\ui_dataIO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <QtUic Include="allInfo.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="dataIO.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="allInfo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\uic\ui_allInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_dataIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_IntTypeStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
