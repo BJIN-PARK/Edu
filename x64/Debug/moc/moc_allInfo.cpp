@@ -63,7 +63,7 @@ void AllInfo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 }
 
 const QMetaObject AllInfo::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_AllInfo.data,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_AllInfo.data,
       qt_meta_data_AllInfo,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -78,12 +78,12 @@ void *AllInfo::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_AllInfo.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int AllInfo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

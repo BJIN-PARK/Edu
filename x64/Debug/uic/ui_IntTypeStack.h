@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -28,11 +29,11 @@ class Ui_IntTypeStack
 {
 public:
     QWidget *centralWidget;
-    QPushButton *pushButton_allInfo;
-    QPushButton *pushButton_dataIO;
+    QGridLayout *gridLayout;
     QLabel *label;
+    QPushButton *pushButton_dataIO;
+    QPushButton *pushButton_allInfo;
     QPushButton *pushButton_totalDataSize;
-    QPushButton *pushButton_exit;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -41,28 +42,40 @@ public:
     {
         if (IntTypeStack->objectName().isEmpty())
             IntTypeStack->setObjectName(QStringLiteral("IntTypeStack"));
-        IntTypeStack->resize(600, 400);
+        IntTypeStack->resize(312, 218);
+        IntTypeStack->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
+"color: rgb(255, 255, 0);"));
         centralWidget = new QWidget(IntTypeStack);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        pushButton_allInfo = new QPushButton(centralWidget);
-        pushButton_allInfo->setObjectName(QStringLiteral("pushButton_allInfo"));
-        pushButton_allInfo->setGeometry(QRect(10, 70, 100, 28));
-        pushButton_dataIO = new QPushButton(centralWidget);
-        pushButton_dataIO->setObjectName(QStringLiteral("pushButton_dataIO"));
-        pushButton_dataIO->setGeometry(QRect(10, 40, 100, 28));
+        gridLayout = new QGridLayout(centralWidget);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(10, 10, 100, 28));
+        label->setStyleSheet(QStringLiteral(""));
+
+        gridLayout->addWidget(label, 0, 0, 1, 1);
+
+        pushButton_dataIO = new QPushButton(centralWidget);
+        pushButton_dataIO->setObjectName(QStringLiteral("pushButton_dataIO"));
+
+        gridLayout->addWidget(pushButton_dataIO, 1, 0, 1, 1);
+
+        pushButton_allInfo = new QPushButton(centralWidget);
+        pushButton_allInfo->setObjectName(QStringLiteral("pushButton_allInfo"));
+
+        gridLayout->addWidget(pushButton_allInfo, 2, 0, 1, 1);
+
         pushButton_totalDataSize = new QPushButton(centralWidget);
         pushButton_totalDataSize->setObjectName(QStringLiteral("pushButton_totalDataSize"));
-        pushButton_totalDataSize->setGeometry(QRect(10, 100, 100, 28));
-        pushButton_exit = new QPushButton(centralWidget);
-        pushButton_exit->setObjectName(QStringLiteral("pushButton_exit"));
-        pushButton_exit->setGeometry(QRect(10, 130, 100, 28));
+
+        gridLayout->addWidget(pushButton_totalDataSize, 3, 0, 1, 1);
+
         IntTypeStack->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(IntTypeStack);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 600, 26));
+        menuBar->setGeometry(QRect(0, 0, 312, 26));
         IntTypeStack->setMenuBar(menuBar);
         mainToolBar = new QToolBar(IntTypeStack);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -79,11 +92,10 @@ public:
     void retranslateUi(QMainWindow *IntTypeStack)
     {
         IntTypeStack->setWindowTitle(QApplication::translate("IntTypeStack", "IntTypeStack", nullptr));
-        pushButton_allInfo->setText(QApplication::translate("IntTypeStack", "All Information", nullptr));
+        label->setText(QApplication::translate("IntTypeStack", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600;\">Menu</span></p></body></html>", nullptr));
         pushButton_dataIO->setText(QApplication::translate("IntTypeStack", "Data IO", nullptr));
-        label->setText(QApplication::translate("IntTypeStack", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">Menu</span></p></body></html>", nullptr));
+        pushButton_allInfo->setText(QApplication::translate("IntTypeStack", "All Information", nullptr));
         pushButton_totalDataSize->setText(QApplication::translate("IntTypeStack", "Total Data Size", nullptr));
-        pushButton_exit->setText(QApplication::translate("IntTypeStack", "Exit", nullptr));
     } // retranslateUi
 
 };

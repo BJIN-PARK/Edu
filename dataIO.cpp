@@ -2,15 +2,13 @@
 #include "ui_DataIO.h"
 
 DataIO::DataIO(QWidget* parent) :
-	QMainWindow(parent),
+	QDialog(parent),
 	ui(new Ui::DataIO)
 {
 	ui->setupUi(this);
 	
 	connect(ui->pushButton_createData, &QPushButton::clicked, this, &DataIO::addDataClicked);
-
 	connect(ui->pushButton_deleteData, &QPushButton::clicked, this, &DataIO::deleteDataClicked);
-
 	connect(ui->pushButton_sortData, &QPushButton::clicked, this, &DataIO::sortDataClicked);
 	// LineEdit 자연수만 입력가능하게
 	QRegExpValidator* rxv = new QRegExpValidator(QRegExp("\\d*"), this);
@@ -94,8 +92,14 @@ void DataIO::sortDataClicked()
 		ui->listWidget_current->addItem(QString::number(item));
 }
 
-void DataIO::closeEvent(QCloseEvent* evt)
+void DataIO::hideEvent(QHideEvent* evt)
 {
-	emit sigCloseEvent(currentDataList, createDataList, deleteDataList);
-	QWidget::closeEvent(evt);
+	emit sigHideEvent(currentDataList, createDataList, deleteDataList);
+	QWidget::hideEvent(evt);
+}
+
+void DataIO::showEvent(QShowEvent* event)
+{
+	QDialog::showEvent(event);
+	this->setModal(true);
 }

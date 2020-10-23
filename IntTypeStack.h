@@ -5,7 +5,7 @@
 #include <QPushButton>
 #include "dataIO.h"
 #include "allInfo.h"
-// #include "totalDataSize.h"
+#include "totalDataSize.h"
 
 namespace Ui
 {
@@ -20,12 +20,14 @@ public:
     IntTypeStack(QWidget* parent = Q_NULLPTR);
     ~IntTypeStack();
     void onDataIO();
-    void onAllInfo();
+    void onallInfo();
+    void ontotalDataSize();
     void syncData(QList<int> curData, QList<int> createData, QList<int> deleteData);
 
 private:
     DataIO* m_DataIO{ nullptr };
-    AllInfo* m_AllInfo{ nullptr };
+    AllInfo* m_allInfo{ nullptr };
+    TotalDataSize* m_totalDataSize{ nullptr };
     Ui::IntTypeStack* ui;
 
     // Data List

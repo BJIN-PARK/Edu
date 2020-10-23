@@ -14,16 +14,16 @@
     <ProjectGuid>{E979E6C7-4D7D-4DA4-A586-FB338F62C38F}</ProjectGuid>
     <Keyword>QtVS_v303</Keyword>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClCompile Include="allInfo.cpp" />
     <ClCompile Include="dataIO.cpp" />
+    <ClCompile Include="totalDataSize.cpp" />
     <QtRcc Include="IntTypeStack.qrc" />
     <QtUic Include="allInfo.ui" />
     <QtUic Include="dataIO.ui" />
@@ -94,6 +95,7 @@
     <QtMoc Include="IntTypeStack.h" />
     <ClCompile Include="IntTypeStack.cpp" />
     <ClCompile Include="main.cpp" />
+    <QtUic Include="totalDataSize.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="dataIO.h" />
@@ -102,9 +104,7 @@
     <QtMoc Include="allInfo.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="x64\Debug\uic\ui_allInfo.h" />
-    <ClInclude Include="x64\Debug\uic\ui_dataIO.h" />
-    <ClInclude Include="x64\Debug\uic\ui_IntTypeStack.h" />
+    <QtMoc Include="totalDataSize.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

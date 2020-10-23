@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_DataIO_t {
     QByteArrayData data[7];
-    char stringdata0[63];
+    char stringdata0[62];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,16 +33,16 @@ struct qt_meta_stringdata_DataIO_t {
 static const qt_meta_stringdata_DataIO_t qt_meta_stringdata_DataIO = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "DataIO"
-QT_MOC_LITERAL(1, 7, 13), // "sigCloseEvent"
-QT_MOC_LITERAL(2, 21, 0), // ""
-QT_MOC_LITERAL(3, 22, 10), // "QList<int>"
-QT_MOC_LITERAL(4, 33, 7), // "curData"
-QT_MOC_LITERAL(5, 41, 10), // "createData"
-QT_MOC_LITERAL(6, 52, 10) // "deleteData"
+QT_MOC_LITERAL(1, 7, 12), // "sigHideEvent"
+QT_MOC_LITERAL(2, 20, 0), // ""
+QT_MOC_LITERAL(3, 21, 10), // "QList<int>"
+QT_MOC_LITERAL(4, 32, 7), // "curData"
+QT_MOC_LITERAL(5, 40, 10), // "createData"
+QT_MOC_LITERAL(6, 51, 10) // "deleteData"
 
     },
-    "DataIO\0sigCloseEvent\0\0QList<int>\0"
-    "curData\0createData\0deleteData"
+    "DataIO\0sigHideEvent\0\0QList<int>\0curData\0"
+    "createData\0deleteData"
 };
 #undef QT_MOC_LITERAL
 
@@ -74,7 +74,7 @@ void DataIO::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         DataIO *_t = static_cast<DataIO *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->sigCloseEvent((*reinterpret_cast< QList<int>(*)>(_a[1])),(*reinterpret_cast< QList<int>(*)>(_a[2])),(*reinterpret_cast< QList<int>(*)>(_a[3]))); break;
+        case 0: _t->sigHideEvent((*reinterpret_cast< QList<int>(*)>(_a[1])),(*reinterpret_cast< QList<int>(*)>(_a[2])),(*reinterpret_cast< QList<int>(*)>(_a[3]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -94,7 +94,7 @@ void DataIO::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             typedef void (DataIO::*_t)(QList<int> , QList<int> , QList<int> );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&DataIO::sigCloseEvent)) {
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&DataIO::sigHideEvent)) {
                 *result = 0;
                 return;
             }
@@ -103,7 +103,7 @@ void DataIO::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
 }
 
 const QMetaObject DataIO::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_DataIO.data,
+    { &QDialog::staticMetaObject, qt_meta_stringdata_DataIO.data,
       qt_meta_data_DataIO,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -118,12 +118,12 @@ void *DataIO::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_DataIO.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QDialog::qt_metacast(_clname);
 }
 
 int DataIO::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -139,7 +139,7 @@ int DataIO::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void DataIO::sigCloseEvent(QList<int> _t1, QList<int> _t2, QList<int> _t3)
+void DataIO::sigHideEvent(QList<int> _t1, QList<int> _t2, QList<int> _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

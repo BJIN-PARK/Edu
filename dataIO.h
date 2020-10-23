@@ -1,5 +1,5 @@
 #pragma once
-#include <QMainWindow>
+#include <QDialog>
 #include <stdio.h>
 #include <Qstring>
 #include <QListWidgetItem>
@@ -9,7 +9,7 @@ namespace Ui
 	class DataIO;
 }
 
-class DataIO : public QMainWindow
+class DataIO : public QDialog
 {
 	Q_OBJECT
 
@@ -21,10 +21,11 @@ public:
 	void sortDataClicked();
 
 signals:
-	void sigCloseEvent(QList<int> curData, QList<int> createData, QList<int> deleteData);
+	void sigHideEvent(QList<int> curData, QList<int> createData, QList<int> deleteData);
 
 protected:
-	void closeEvent(QCloseEvent* evt) override;
+	void hideEvent(QHideEvent* evt) override;
+	void showEvent(QShowEvent* event) override;
 
 private:
 	int cnt = 0;
