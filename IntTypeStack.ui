@@ -14,8 +14,7 @@
    <string>IntTypeStack</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 170, 255);
-color: rgb(255, 255, 0);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -31,6 +30,9 @@ color: rgb(255, 255, 0);</string>
     </item>
     <item row="1" column="0">
      <widget class="QPushButton" name="pushButton_dataIO">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Data IO</string>
       </property>
@@ -38,6 +40,9 @@ color: rgb(255, 255, 0);</string>
     </item>
     <item row="2" column="0">
      <widget class="QPushButton" name="pushButton_allInfo">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>All Information</string>
       </property>
@@ -45,6 +50,9 @@ color: rgb(255, 255, 0);</string>
     </item>
     <item row="3" column="0">
      <widget class="QPushButton" name="pushButton_totalDataSize">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Total Data Size</string>
       </property>

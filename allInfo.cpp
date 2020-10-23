@@ -3,7 +3,6 @@
 #include "dataIO.h"
 
 AllInfo::AllInfo(QWidget* parent)
-	//: QMainWindow(parent),
 	: QDialog(parent),
 	ui(new Ui::AllInfo)
 {
@@ -14,7 +13,7 @@ AllInfo::~AllInfo()
 {
 	delete ui;
 }
-
+//전달 받은 데이터 리스트를 각 리스트위젯에 표시
 void AllInfo::displayData(QList<int> curDataList, QList<int> createDataList, QList<int> deleteDataList)
 {
 	ui->listWidget_currentData->clear();
@@ -27,7 +26,7 @@ void AllInfo::displayData(QList<int> curDataList, QList<int> createDataList, QLi
 	for (auto delData : deleteDataList)
 		ui->listWidget_deleteData->addItem(QString::number(delData));
 }
-
+//현재 창 이외의 창 무시
 void AllInfo::showEvent(QShowEvent* event)
 {
 	QDialog::showEvent(event);

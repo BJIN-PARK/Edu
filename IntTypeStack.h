@@ -19,6 +19,8 @@ class IntTypeStack : public QMainWindow
 public:
     IntTypeStack(QWidget* parent = Q_NULLPTR);
     ~IntTypeStack();
+
+public slots:
     void onDataIO();
     void onallInfo();
     void ontotalDataSize();
@@ -29,8 +31,6 @@ private:
     AllInfo* m_allInfo{ nullptr };
     TotalDataSize* m_totalDataSize{ nullptr };
     Ui::IntTypeStack* ui;
-
-    // Data List
 	QList<int> m_listCurrentDataList;
 	QList<int> m_listCreateDataList;
 	QList<int> m_listDeleteDataList;

@@ -16,6 +16,8 @@ class DataIO : public QDialog
 public:
 	explicit DataIO(QWidget* parent = Q_NULLPTR);
 	~DataIO();
+
+public slots:
 	void addDataClicked();
 	void deleteDataClicked();
 	void sortDataClicked();
@@ -23,14 +25,14 @@ public:
 signals:
 	void sigHideEvent(QList<int> curData, QList<int> createData, QList<int> deleteData);
 
-protected:
-	void hideEvent(QHideEvent* evt) override;
-	void showEvent(QShowEvent* event) override;
-
 private:
 	int cnt = 0;
 	Ui::DataIO* ui;
 	QList<int> currentDataList;
 	QList<int> createDataList;
 	QList<int> deleteDataList;
+
+protected:
+	void hideEvent(QHideEvent* evt) override;
+	void showEvent(QShowEvent* event) override;
 };
